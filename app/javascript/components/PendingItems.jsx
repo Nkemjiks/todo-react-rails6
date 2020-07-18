@@ -20,7 +20,6 @@ const PendingItems = ({ todo, handleSubmit }) => {
       ...pendingTodo,
       completed: event.target.checked
     })
-    window.location.reload(false);
   }
 
   const handleKeyDown = (event) => {
