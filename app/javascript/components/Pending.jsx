@@ -5,7 +5,7 @@ const Pending = ({ pending }) => {
   const handleSubmit = (body) => {
     const url = "/todos/update";
     const token = document.querySelector('meta[name="csrf-token"]').content;
-    
+
     fetch(url, {
       method: "PUT",
       headers: {
@@ -21,8 +21,7 @@ const Pending = ({ pending }) => {
         throw new Error("Network response was not ok.");
       })
       .then(response => {
-        setTodos(response);
-        setLoading(false);
+        console.log(response);
       })
       .catch(() => console.log('An error occurred while adding the todo item'));
   }
