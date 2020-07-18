@@ -26,6 +26,7 @@ const Pending = ({ pending }) => {
       })
       .catch(() => console.log('An error occurred while adding the todo item'));
   }
+  
   return (
     <div>
       <h4>Pending</h4>
